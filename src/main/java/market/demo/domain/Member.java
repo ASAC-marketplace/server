@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -21,6 +22,16 @@ public class Member {
     private String email;
 
     private String password;
+
+    private String gender;
+    private String ageRange;
+    private String phoneNumber;
+    private LocalDate birthday;
+    private String provider;
+    private String providerId;
+    //Set<Role> roles;
+
+    //sns 연동
 
     @Embedded
     private Address address;
