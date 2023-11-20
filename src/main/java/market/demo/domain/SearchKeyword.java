@@ -12,4 +12,5 @@ public class SearchKeyword {
 
     private String keyword; // 검색 키워드
     private Integer frequency; // 주어진 기간 동안의 검색 빈도수
+
 }
