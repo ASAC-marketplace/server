@@ -22,6 +22,8 @@ public class Delivery {
 
     private DeliveryStatus deliveryStatus;
 
+    private String deliveryRequest; //배송 요청
+
     @OneToOne(mappedBy = "delivery", fetch = LAZY)
     private Order order;
 }

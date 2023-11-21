@@ -3,8 +3,6 @@ package market.demo.domain;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import org.springframework.security.core.userdetails.User;
 
 import java.time.LocalDateTime;
 
