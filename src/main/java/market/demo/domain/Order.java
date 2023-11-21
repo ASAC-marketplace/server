@@ -38,4 +38,6 @@ public class Order {
     @OneToOne(cascade = ALL, fetch = LAZY)
     @JoinColumn(name = "delivery_id")
     private Delivery delivery;
+
+    private Long totalAmount;
 }

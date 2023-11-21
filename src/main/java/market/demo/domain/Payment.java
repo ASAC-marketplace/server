@@ -21,10 +21,14 @@ public class Payment {
     @Column(name = "payment_date")
     private LocalDateTime paymentDate;
 
-    @Column(name = "status")
-    private String status;
+    @Column(name = "payment_status")
+    private String paymentStatus;
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "order_id")
     private Order order;
+
+    //paymentMethod
+    //totalAmount
+    //paymentStatus
 }
